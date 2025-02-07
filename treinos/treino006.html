@@ -3,121 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProgNow</title>
+    <title>Formulários e Iframes</title>
     <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
         body {
-            background-color: #26C88C;
-            
-           
-        }
-
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        header {
-            height: 100px;
-            color: rgb(255, 255, 255);
-            background-color: rgb(241, 241, 241);  
-            margin: auto;
             
         }
 
-        header > h1 {
-            text-shadow: 1px 1px 1px black;
-            transform: translateY(60%);
-           
-            padding-left: 50px;
+        h1 {
+            padding: 5px;
+            margin: 10px;
         }
 
-     
-        button  {
+        p {
+            padding: 5px;
+            margin: 10px;
+        }
+
+        iframe {
             
-            margin-left: 250px;
-            color: white;
-            background-color: black;
-            border-radius: 10px;
-        }
-
-        button.a {
-            margin-left: 20px;
-            color: white;
-            background-color: black;
-            border-radius: 10px;
-            padding-left: 3px;
-        }
-
-        button.b {
-            margin-left: 20px;
-            color: white;
-            background-color: black;
-            border-radius: 10px;
-            
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         main {
-            padding-left: 80px;
-            margin-top: 80px;
-        }
-
-        main > h1 {
-            margin-left: auto;
-            font-size: 4.0em;
-            text-shadow: 1px 1px 1px black;
-        }
-        
-        main > p {
-            margin-top: 40px;
-           font-weight: bold;
-        }
-
-        main > button {
-            margin: 35px;
-            padding: 10px;
-            font-size:  2.5em;
-            margin-left: auto;
-            border-radius: 0px;
-            text-shadow: 1px 1px 1px rgb(255, 255, 255);
-        }
-
-        main > button:hover {
-            background-color: #26C88C;
-        }
-
-        img {
-           
-         
+            background-color: black;
         }
 
         
-</style>
+    </style>
 </head>
 <body>
-    <header>
-        <h1>ProgNow</h1>
-        <a href=""><button>Quem somos?</button></a>
-        <a href=""><button class="a">Valores</button></a>
-        <a href=""><button class="b">Contato</button></a>
-    </header>
-
+    <h1>Iframes</h1>
+    <p>Alguns iframes</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere impedit sit, aspernatur repellat ab excepturi voluptates ea dolorum sequi nam odio eveniet. Dolore saepe minus at consectetur nulla odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quod adipisci aliquid soluta molestiae voluptatibus iure dolore quas sunt repellat voluptatum possimus amet est modi, explicabo sed exercitationem officia distinctio.</p>
     
-    <section>
-        <article>
-            
-        </article>
-    </section>
+       <iframe src="treino005.html" frameborder="1"></iframe>
 
-
-    <section>
-        <article>
-            <main>
-                <h1>TUDO DE <br> PROGRAMAÇÃO</h1>
-                <p>Aprenda a programar em 5 SEMANAS! <br> Com profissionais finissimos da área,aqui você irá <br> elevar o seu nível de programação</p>
-                <button>SAIBA MAIS</button>
-
-                
-            </main>
-        </article>
-    </section>
+       
 </body>
 </html>
