@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+    form label,
+    form input,
+    form textarea,
+    form button {
+        display: block;
+        margin-bottom: 15px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Digite seu problema abaixo.</h1>
+    <form action="">
+        <label for="iproblema">Problema</label>
+        <input type="text" name="problema" id="iproblema" required>
+
+        <label for="iemail">Email</label>
+        <input type="email" name="email" id="iemail" required>
+        
+
+        <label for="imensagem">Especifique seu problema</label>
+        <textarea name="mensagem" id="imensagem"></textarea>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </form>
+</body>
+</html>
