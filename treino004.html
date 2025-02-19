@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <title>Portifólio| Murilo Meneguelli</title>
     <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
         * {
             margin: 0px;
             padding: 0px;
         }
 
         header {
+           
             background-color: black;
             color: white;
             height: 200px;
@@ -32,15 +37,33 @@
             transition: 0.6s;
         }
 
+        .container {
+            text-align: center;
+        }
+
+        .container > img {
+            background-color: black;
+            border-radius: 15px;
+            border: dashed;
+        }
+
+        p > img {
+            width: 100px;
+        }
+
         img {
-            width: 200px;
-            background: repeat-x url(icone-trait-noir.png)
+            width: 700px;
+            margin-top: 30px;
+        }
+
+        img:hover {
+            box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.295);
         }
 
         
         ul {
             display: flex;
-            margin-top: 90px;
+            margin-top: 73px;
         }
 
         li {
@@ -52,20 +75,20 @@
             padding: 0 15px;
         }
 
-        a {
+        ul > li > a {
             color:  white;
             text-decoration: none;
             font-weight: bold;
         }
 
-         a:hover {
+        ul > li > a:hover {
             color: lightgray;
             transition: 0.7s ;
         }
 
          main > h1 {
             margin-top: 50px;
-            padding-left: 300px;
+            padding-left: 230px;
             font-size: 3em;
         }
 
@@ -77,9 +100,31 @@
 
         main > p {
             text-align: center;
-            margin-top: 10px;
+            margin: auto;
+            width: 55%;
         }
-    </style>
+
+        main > a {
+            margin-top: 30px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+
+            
+        }
+        
+        p > a {
+            text-decoration: none;
+            color: rgb(0, 17, 255);
+        }
+
+        p > a:hover {
+            color: lightgray;
+        }
+
+
+        </style>
 </head>
 <body>
     <header>
@@ -88,8 +133,8 @@
         <nav>
             
             <ul class="menu">
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobremim">Sobre Mim</a></li>
                 <li><a href="#">Contatos</a></li>
             </ul>
         </nav>
@@ -104,22 +149,40 @@
             <main>
                 <h1>Alguns projetos...</h1>
 
-                <div>
-                    
+                <h3 id="projetos">Projeto Android</h3>
+                <p>O Projeto Android é um projeto aonde eu apresento aos leitores o Bugdroid (mascote do Google) <br> e também mostro seus criadores e todas suas versões até chegar no que conhecemos hoje.</p>
+
+                <div class="container">
+                    <img src="android.png" alt="Projeto-Android">
                 </div>
 
-                <h3>Projeto Android</h3>
-                <p>O Projeto Android é um projeto aonde eu apresento aos leitores o Bugdroid (mascote do Google) e também mostro seus criadores e todas suas versões até chegar no que conhecemos hoje</p>
+                <a href="https://murilomeneguelli.github.io/projeto-android/
+                " target="_blank">Acesse o Projeto completo aqui</a>
 
-                <div>
-                    <img src="" alt="">
+                <h3>Projeto Cordel</h3>
+                <p>O Projeto Cordel é um projeto aonde eu aprensento um poema de Milton Duarte, <br> nele eu uso diversos efeitos, como por exemplo: O efeito Paralax.
+                </p>
+
+                <div class="container">
+                    <img src="cordel.png" alt="Projeto-Cordel">
                 </div>
+                <a href="https://murilomeneguelli.github.io/Projeto-Cordel/" target="_blank">Acesse o Projeto completo aqui</a> 
+                
+                <h3>Projeto Login</h3>
+                <p>O Projeto Login é um projeto aonde eu crio uma tela de login <br> com uma imagem responsiva e design minimalista.</p>
+
+                <div class="container">
+                    <img src="login.png" alt="Projeto-Tela-Login">
+                </div>
+                <a href="https://murilomeneguelli.github.io/Projeto-Tela-Login/">Acesse o Projeto completo aqui</a>
+
+                
+
             </main>
         </article>
     </section>
 
-
-
+    
     <footer>
 
     </footer>
