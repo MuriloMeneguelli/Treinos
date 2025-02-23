@@ -3,213 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio| Murilo Meneguelli</title>
+    <title>Portifólio | Murilo Meneguelli</title>
     <style>
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #FFD700;
-        }
-
-        * {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         header {
-           
-            background-color: black;
-            color: white;
+            background-color: #333;
+            color: #FFF;
             height: 200px;
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.404);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
         }
 
-        header > h1 {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
+        header h1 {
             text-align: center;
-            font-size: 5em;
-            
+            font-size: 4em;
+            margin: 0;
+            transition: color 0.6s ease;
         }
 
-         header > h1:hover {
+        header h1:hover {
             color: #FFD700;
-            transition: 0.6s;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu li a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.7s ease;
+        }
+
+        .menu li a:hover {
+            color: lightgray;
+        }
+
+        main {
+            background-color: #FFF;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 10px;
+        }
+
+        main h1 {
+            color: #333;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        main h3 {
+            color: #333;
+            text-align: center;
+            font-size: 2em;
+            margin-top: 50px;
+        }
+
+        main p {
+            text-align: center;
+            margin: auto;
+            width: 85%;
+            color: #555;
+            line-height: 1.6;
         }
 
         .container {
             text-align: center;
+            margin-top: 20px;
         }
 
-        .container > img {
-            background-color: black;
+        .container img {
+            max-width: 100%;
+            height: auto;
             border-radius: 15px;
-            border: dashed;
-        }
-
-        p > img {
-            width: 100px;
-        }
-
-        img {
-            width: 700px;
+            border: 2px dashed #333;
+            background-color: black;
             margin-top: 30px;
+            box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease;
         }
 
-        img:hover {
-            box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.295);
+        .container img:hover {
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
         }
 
-        
-        ul {
-            display: flex;
-            margin-top: 73px;
-        }
-
-        li {
-            list-style: none;
-            
-        }
-
-        .menu > li {
-            padding: 0 15px;
-        }
-
-        ul > li > a {
-            color:  white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        ul > li > a:hover {
-            color: lightgray;
-            transition: 0.7s ;
-        }
-
-        main {
-            background-color: rgb(255, 255, 255);
-            margin-left: 190px;
-            margin-right: 190px;
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.404);
-        }
-
-         main > h1 {
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
-            padding-top: 50px;
-            padding-left: 230px;
-            font-size: 3em;
-        }
-
-        main > h3 {
-            margin-top: 75px;
-            text-align: center;
-            font-size: 3.3em;
-        }
-
-        main > p {
-            text-align: center;
-            margin: auto;
-            width: 55%;
-        }
-
-        main > p.espacado {
-            line-height: 30px;
-            
-        }
-
-        main > a {
-            margin-top: 30px;
+        main a {
             display: block;
             text-align: center;
             text-decoration: none;
-            color: black;
-
-            
+            color: #333;
+            margin-top: 30px;
+            transition: color 0.3s ease;
         }
         
-        p > a {
+        p a {
             text-decoration: none;
-            color: rgb(0, 17, 255);
+            color: #0011FF;
+            transition: color 0.3s ease;
         }
 
-        p > a:hover {
+        p a:hover {
             color: lightgray;
         }
 
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 3em;
+            }
 
-        </style>
+            .container img {
+                width: 90%;
+            }
+
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu li {
+                margin: 10px 0;
+            }
+
+            main {
+                width: 95%;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .container img {
+                width: 100%;
+            }
+        }
+
+        /* Estilo da linha divisória */
+        .divider {
+            border: 0;
+            height: 2px;
+            background: #333;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        /* Estilo da seção de contatos */
+        .contact-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section a {
+            color: #0011FF;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            color: lightgray;
+        }
+
+    </style>  
 </head>
 <body>
     <header>
-        <h1>Bem-vindo (a)</h1>
-
+        <h1>Bem-vindo(a)</h1>
         <nav>
-            
             <ul class="menu">
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#sobremim">Sobre Mim</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
     </header>
-
-    
-
-
-
     <section>
         <article>
             <main>
-                <h1>Sobre mim...</h1>
+                <h1>Sobre mim</h1>
                 <br>
-                <p class="espacado">Me chamo Murilo Meneguelli, tenho 16 anos e programo desde os 14, sou encantado desde pequeno pela programação.
-                            
-                Atualmente moro no Brasil e trabalho de freelancer, meu maior objetivo é iniciar uma startup e futuramente fazer um intecâmbio para o Canadá, estudo muito todos os dias para atingir essa meta.
-            
-                <h1>Alguns projetos...</h1>
-
+                <p class="espacado">Me chamo Murilo Meneguelli, tenho 16 anos e programo desde os 14, sou encantado desde pequeno pela programação. Atualmente moro no Brasil e trabalho de freelancer, meu maior objetivo é iniciar uma startup e futuramente fazer um intercâmbio para o Canadá, estudo muito todos os dias para atingir essa meta.</p>
+                <!-- Adicionada linha divisória -->
+                <hr class="divider">
+                <h1>Alguns projetos</h1>
                 <h3 id="projetos">Projeto Android</h3>
-                <p>O Projeto Android é um projeto aonde eu apresento aos leitores o Bugdroid (mascote do Google) <br> e também mostro seus criadores e todas suas versões até chegar no que conhecemos hoje.</p>
-
+                <p>O Projeto Android é um projeto aonde eu apresento aos leitores o Bugdroid (mascote do Google) e também mostro seus criadores e todas suas versões até chegar no que conhecemos hoje.</p>
                 <div class="container">
                     <img src="android.png" alt="Projeto-Android">
                 </div>
-
-                <a href="https://murilomeneguelli.github.io/projeto-android/
-                " target="_blank">Acesse o Projeto completo aqui</a>
-
+                <a href="https://murilomeneguelli.github.io/projeto-android/" target="_blank">Acesse o Projeto completo aqui</a>
                 <h3>Projeto Cordel</h3>
-                <p>O Projeto Cordel é um projeto aonde eu aprensento um poema de Milton Duarte, <br> nele eu uso diversos efeitos, como por exemplo: O efeito Paralax.
-                </p>
-
+                <p>O Projeto Cordel é um projeto aonde eu aprensento um poema de Milton Duarte, nele eu uso diversos efeitos, como por exemplo: O efeito Paralax.</p>
                 <div class="container">
                     <img src="cordel.png" alt="Projeto-Cordel">
                 </div>
                 <a href="https://murilomeneguelli.github.io/Projeto-Cordel/" target="_blank">Acesse o Projeto completo aqui</a> 
-                
                 <h3>Projeto Login</h3>
-                <p>O Projeto Login é um projeto aonde eu crio uma tela de login <br> com uma imagem responsiva e design minimalista.</p>
-
+                <p>O Projeto Login é um projeto aonde eu crio uma tela de login com uma imagem responsiva e design minimalista.</p>
                 <div class="container">
                     <img src="login.png" alt="Projeto-Tela-Login">
                 </div>
                 <a href="https://murilomeneguelli.github.io/Projeto-Tela-Login/">Acesse o Projeto completo aqui</a>
-            
-
-        
-                a.
-
-                
-
+                <hr class="divider">
+                <section class="contact-section" id="contatos">
+                    <h2>Contatos</h2>
+                    <p>Se você deseja entrar em contato comigo, aqui estão minhas informações:</p>
+                    <p>Email: <a href="mailto:meneguellim7@gmail.com"|>meneguellim7@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/murilomeneguelli" target="_blank">https://www.linkedin.com/in/murilomeneguelli</a></p>
+                    <p>GitHub: <a href="https://github.com/murilomeneguelli" target="_blank">MuriloMeneguelli</p>
+                </section>
             </main>
         </article>
     </section>
-
-    
     <footer>
-
     </footer>
 </body>
 </html>
