@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            border-radius: 10px;
+            height: 500px;
+            width: 300px;
+            background-color:  hsl(0, 0%, 20%);
+        }
+
+        div > #foto {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+        }
+
+        div > h1 {
+            color: white;
+        }
+
+        button  {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+           padding: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            width: 250px;
+
+            border-radius: 6px ;
+            background-color:  hsl(0, 0%, 29%);
+            color: white;
+            border: none;
+
+        }
+
+        button:hover {
+            background-color: hsl(0, 0%, 40%);
+            cursor: pointer;
+        }
+
+        h1{
+            font-size: 18pt;
+        }
+
+        p#a {
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    
+
+    
+    <div>
+        <img id="foto" src="avatar-jessica.jpeg" alt="">
+        <h1>Jessica Randall</h1>
+        <p style="color: hsl(75, 94%, 57%);">London, United Kingdom</p>
+        <p id="a" style="color:  hsl(0, 0%, 73%);" >"Front-end developer and avid reader."</p>
+        <button>Github</button>
+        <button>Frontend Mentor</button>
+        <button>Linkedin</button>
+        <button>Twitter</button>
+        <button>Instagram</button>
+    </div>
+</body>
+</html>
